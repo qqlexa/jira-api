@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "jira-api"
+version = "0.1.0"
+description = ""
+authors = ["Oleksii Hlavatskyi <qqlexa.ua@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.0"
+starlette = "^0.38.5"
+uvicorn = "^0.30.6"
+pydantic = {extras = ["dotenv", "email"], version = "^2.9.2"}
+inflection = "^0.5.1"
+fastapi-mail = "^1.4.1"
+alembic = "^1.13.2"
+SQLAlchemy = "^2.0.35"
+sqlalchemy-stubs = "^0.4"
+psycopg2-binary = "^2.9.9"
+uvloop = "^0.20.0"
+pydantic-settings = "^2.5.2"
+fastapi-users = {extras = ["sqlalchemy"], version = "^13.0.0"}
+asyncpg = "^0.29.0"
+
+[tool.poetry.group.dev.dependencies]
+httptools = "^0.6.1"
+gunicorn = "^23.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
